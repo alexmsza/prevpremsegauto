@@ -17,3 +17,11 @@ O conjunto de dados é ideal para explorar modelos de regressão linear, anális
 6. Lidar com dados categóricos. Descreva o tratamento que você aplicou.
 7. Fazer EDA (Análise Exploratória de Dados);
 8. Descreva os tipos de dados: float, int64, integer, ...
+
+## Descrição dos Tipos de Dados e Tratamento de Dados Categóricos
+
+### Tipos de Dados
+Após o processamento, todos os dados foram convertidos para o tipo `float64`, conforme exibido pelo script de processamento.
+
+### Tratamento de Dados Categóricos
+O conjunto de dados não continha variáveis categóricas. Se houvesse, o tratamento seria feito usando a função `pd.get_dummies` do pandas para converter as variáveis categóricas em variáveis dummy (one-hot encoding). Este método é preferível para evitar a criação de uma relação ordinal artificial entre as categorias.
